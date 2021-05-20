@@ -58,7 +58,9 @@ class Game{
                      if(index === player.index){
                          
                        //add code to display the player's name on the respective basket.
-
+                        fill("black");
+                        textSize(25);
+                        text(allPlayers[plr].name, x-25, y+25);
                          
                      }
                     
@@ -66,9 +68,6 @@ class Game{
                  
                  }
                 
-                
-                 
-
                 if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
                     player.distance -= 10
                     player.update();
@@ -108,14 +107,7 @@ class Game{
                         
                     }
                   }
-                
-
-         
-         
-        
-         
-
-    }
+               }
 
     end(){
        console.log("Game Ended");
